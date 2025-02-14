@@ -2,6 +2,7 @@
 
 import { motion, useAnimationFrame } from "framer-motion"
 import { Github, Twitter } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { useRef } from "react"
 
@@ -17,18 +18,44 @@ export default function NavBar() {
   })
 
   return (
-    <motion.div
-      className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4"
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 20,
-        mass: 1,
-      }}
-    >
-      <div className="relative">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center items-center p-4">
+      <motion.div
+        className="absolute left-4 md:left-8"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <motion.div
+          animate={{
+            y: [0, -10, 0],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src="/recluse-profile.jpg"
+            alt="RecluseAI Logo"
+            width={60}
+            height={60}
+            className="rounded-full recluse-bg-primary p-1"
+          />
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="relative"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 20,
+          mass: 1,
+        }}
+      >
         <motion.div
           ref={glowRef}
           className="absolute inset-[-2px] rounded-full blur-md"
@@ -106,8 +133,8 @@ export default function NavBar() {
             </div>
           </div>
         </motion.nav>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }
 
