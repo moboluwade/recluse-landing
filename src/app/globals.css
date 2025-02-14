@@ -7,6 +7,13 @@
   --secondary: #c7d2d5;
   --dark: #232325;
 }
+* {
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 
 body {
   background-color: var(--dark);
