@@ -35,7 +35,7 @@ export default function Page() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="block mb-2">Cut Through the Noise - </span>
+              <span className="block mb-2">Cut Through the Noise with</span>
               <span className="recluse-primary">RecluseAI</span>
             </motion.h1>
             <motion.p
