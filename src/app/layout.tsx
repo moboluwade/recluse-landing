@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "RecluseAI",
-  description: "Experience the future of AI-powered analysis",
+  description: "An Open Source Twitter AI Agent. RecluseAI is an intelligent, autonomous Twitter agent that engages with mentions in real time.",
   icons: {
     icon: "/favicon.ico", // Default favicon
     apple: "/apple-touch-icon.png", // Apple devices
