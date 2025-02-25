@@ -20,7 +20,7 @@ export default function NavBar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center items-center p-4">
       <motion.div
-        className="absolute left-4 md:left-8"
+        className="absolute left-4 md:left-8 z-30 hidden md:inline-block"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -85,7 +85,7 @@ export default function NavBar() {
               </Link>
             </motion.div>
 
-            <div className="hidden md:flex items-center gap-8">
+            <div className="flex md:flex items-center gap-2 md:gap-8">
               {["Docs", "Community"].map((item) => (
                 <motion.div
                   key={item}

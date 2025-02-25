@@ -35,7 +35,7 @@ export default function Page() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="block mb-2">Unleash the power of</span>
+              <span className="block mb-2">Cut Through the Noise with</span>
               <span className="recluse-primary">RecluseAI</span>
             </motion.h1>
             <motion.p
@@ -44,9 +44,7 @@ export default function Page() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-[#C7D2D5] text-xl md:text-2xl max-w-3xl mb-12"
             >
-              Experience cutting-edge AI analysis that transforms your data into
-              actionable insights. Discover patterns, predict trends, and make
-              informed decisions with RecluseAI.
+              The trend cycle moves fast—don&apos;t get left behind. RecluseAI scans social signals, filters the noise, and delivers insights that keep you ahead of the curve.
             </motion.p>
             <motion.div
               className="flex flex-col items-center md:flex-row gap-2 md:gap-8 md:space-y-0 space-y-4"
